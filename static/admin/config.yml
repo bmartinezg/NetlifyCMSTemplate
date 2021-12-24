@@ -13,7 +13,6 @@ collections:
     folder: 'content/pages'
     format: 'frontmatter'
     create: true
-    extension: "json"
     editor:
       preview: true
     fields:
@@ -25,7 +24,6 @@ collections:
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    extension: "json"
     editor:
       preview: false
     fields:
@@ -33,13 +31,3 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: 'header'
-    label: 'Header'
-    extension: "json"
-    description: "Main header"
-    file: "content/singles/header.json"
-    extension: "json"
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-
