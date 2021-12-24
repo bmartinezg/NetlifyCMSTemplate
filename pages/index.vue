@@ -1,5 +1,6 @@
 <template>
   <div>
+    
   </div>
 </template>
 
@@ -8,7 +9,7 @@ export default {
   
   name: 'HomeScreen',
   async asyncData({ $content }) {
-    const posts = await $content("blog").fetch();
+    const posts = await $content("pages").fetch();
 
     return {
       posts,
