@@ -2,10 +2,10 @@
    <b-navbar>
       <template #brand>
           <b-navbar-item tag="router-link" :to="{ path: '/' }">
-              <img
-                  :src="headerData.logo"
-                  alt="Logo"
-              >
+            <img
+              :src="headerData.logo"
+              alt="Logo"
+            >
           </b-navbar-item>
         </template>
         <template #start>
