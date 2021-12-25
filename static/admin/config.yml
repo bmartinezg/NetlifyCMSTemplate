@@ -31,3 +31,14 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: "single_types"
+    label: "Single types"
+    extension: "json"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/single_types/home_page.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
