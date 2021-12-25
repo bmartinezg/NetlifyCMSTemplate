@@ -8,8 +8,20 @@ public_folder: assets/images
 publish_mode: editorial_workflow
 
 collections:
+  - name: "single_types"
+    label: "Single types"
+    extension: "json"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/single_types/home_page.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: markdown}
+
   - name: 'page'
     label: 'Pages'
+    extension: "json"
     folder: 'content/pages'
     format: 'frontmatter'
     create: true
@@ -20,6 +32,7 @@ collections:
 
   - name: 'blog'
     label: 'Blog'
+    extension: "json"
     folder: 'content/blog'
     format: 'frontmatter'
     create: true
@@ -31,14 +44,3 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-
-  - name: "single_types"
-    label: "Single types"
-    extension: "json"
-    files:
-      - label: "Home Page"
-        name: "home"
-        file: "content/single_types/home_page.json"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
