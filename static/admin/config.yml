@@ -3,7 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
   
 media_folder: static/images
-public_folder: assets/images
+public_folder: static/images
 
 publish_mode: editorial_workflow
 
@@ -12,13 +12,19 @@ collections:
     label: "Single types"
     extension: "json"
     files:
+      - label: "Header"
+        name: "header"
+        file: "content/single_types/header.json"
+        fields:
+          - {label: 'Logo', name: 'logo', widget: 'image'}
       - label: "Home Page"
         name: "home"
         file: "content/single_types/home_page.json"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: markdown}
-
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Description', name: 'description', widget: 'markdown'}
+          - {label: 'Background', name: 'background', widget: 'image', choose_url: false}
+  
   - name: 'page'
     label: 'Pages'
     extension: "json"

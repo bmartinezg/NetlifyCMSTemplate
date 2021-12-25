@@ -1,20 +1,22 @@
 <template>
   <div>
-    
+    <p>CONTENT----</p>
+    {{posts}}
   </div>
 </template>
 
 <script>
 export default {
-  
   name: 'HomeScreen',
+
   async asyncData({ $content }) {
-    const posts = await $content("pages").fetch();
+    const posts = await $content("single_types/home_page").fetch();
 
     return {
       posts,
     };
   },
+
   head() {
     return {
       script: [
