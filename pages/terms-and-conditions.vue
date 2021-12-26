@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <h1>{{ title }}</h1>
+    <h1 class="title">{{ title }}</h1>
     <div v-html="markdownToHtml" />
   </section>
 </template>
@@ -19,17 +19,11 @@ export default {
       content
     };
   },
-  
-  data () {
-    return {
-      exa: '**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum ha'
-    }
-  },
 
   computed: {
-   markdownToHtml(){
-     return marked(this.content || '');
-   }
- }
+    markdownToHtml(){
+      return marked(this.content || '');
+    }
+  }
 }
 </script>
