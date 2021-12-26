@@ -6,6 +6,5 @@ export default () => {
     
     const path = value.split('/')
     return `images/${path[path.length - 1]}`
-    // return `/images/png-negro.png`
   })
 }

@@ -1,5 +1,5 @@
 <template>
-   <b-navbar>
+  <b-navbar fixed-top shadow>
       <template #brand>
           <b-navbar-item tag="router-link" :to="{ path: '/' }">
             <img
@@ -9,7 +9,7 @@
           </b-navbar-item>
         </template>
         <template #start>
-          <b-navbar-item href="#">
+          <b-navbar-item href="/">
               Home
           </b-navbar-item>
           <b-navbar-item href="#">

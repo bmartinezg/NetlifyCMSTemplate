@@ -41,7 +41,7 @@ export default {
     // https://medium.com/dont-leave-me-out-in-the-code/global-scss-variables-in-nuxt-5fe864873cb5
     '@nuxtjs/style-resources',
     // https://www.npmjs.com/package/nuxt-buefy
-    'nuxt-buefy',
+    ['nuxt-buefy', { css: false }]
   ],
 
   styleResources: {
