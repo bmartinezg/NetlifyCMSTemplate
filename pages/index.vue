@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>CONTENT----</p>
-    {{posts}}
+    <Hero v-bind="data" />
+    <Grid />
   </div>
 </template>
 
@@ -10,10 +10,10 @@ export default {
   name: 'HomeScreen',
 
   async asyncData({ $content }) {
-    const posts = await $content("single_types/home_page").fetch();
+    const data = await $content("single_types/home_page").fetch();
 
     return {
-      posts,
+      data,
     };
   },
 
