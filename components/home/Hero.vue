@@ -1,6 +1,6 @@
 <template>
   <section class="hero is-halfheight">
-    <div class="hero-body" :style="{backgroundImage: `url(${background})`}">
+    <div class="hero-body" :style="{ backgroundImage: `url(${background})` }">
       <div class="container">
         <p class="title">
           {{ title }}
@@ -12,7 +12,7 @@
         <b-button type="is-primary is-light">Primary Light</b-button>
       </div>
     </div>
-</section>
+  </section>
 </template>
 
 <script>
@@ -22,17 +22,17 @@ export default {
   props: {
     title: {
       type: String,
-      default: ''
+      default: '',
     },
     description: {
       type: String,
-      default: ''
+      default: '',
     },
     background: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>
 

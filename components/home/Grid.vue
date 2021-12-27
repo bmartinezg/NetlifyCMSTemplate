@@ -2,26 +2,16 @@
   <section class="container grid">
     <div class="columns">
       <div class="column">
-        <b-icon
-          icon="account"
-          size="is-large" />
+        <b-icon icon="account" size="is-large" />
       </div>
       <div class="column">
-        <b-icon
-          icon="view-dashboard"
-          size="is-large"
-          type="is-primary" />
+        <b-icon icon="view-dashboard" size="is-large" type="is-primary" />
       </div>
     </div>
     <div class="columns">
+      <div class="column">First column</div>
       <div class="column">
-        First column
-      </div>
-      <div class="column">
-        <b-icon
-          icon="view-dashboard"
-          size="is-large"
-          type="is-primary" />
+        <b-icon icon="view-dashboard" size="is-large" type="is-primary" />
       </div>
     </div>
   </section>

@@ -6,25 +6,27 @@
 </template>
 
 <script>
-import { marked } from 'marked';
+import { marked } from 'marked'
 
 export default {
   name: 'TermsAndConditions',
 
   async asyncData({ $content }) {
-    const {en} = await $content("single_types/terms_and_conditions_page").fetch();
-    const {title, content} = en
+    const { en } = await $content(
+      'single_types/terms_and_conditions_page'
+    ).fetch()
+    const { title, content } = en
 
     return {
       title,
-      content
-    };
+      content,
+    }
   },
 
   computed: {
-    markdownToHtml(){
-      return marked(this.content || '');
-    }
-  }
+    markdownToHtml() {
+      return marked(this.content || '')
+    },
+  },
 }
 </script>

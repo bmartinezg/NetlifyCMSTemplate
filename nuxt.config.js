@@ -1,6 +1,6 @@
 export default {
   target: 'static',
-  
+
   // Global page headers: https://go.nuxtjs.dev/config-head
 
   head: {
@@ -15,9 +15,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~assets/scss/main.scss'
-  ],
+  css: ['~assets/scss/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['@/plugins/resolvePath.js'],
@@ -35,7 +33,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://google-analytics.nuxtjs.org/setup
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,21 +49,19 @@ export default {
     // https://www.npmjs.com/package/nuxt-buefy
     ['nuxt-buefy', { css: false }],
     // https://sitemap.nuxtjs.org/guide/configuration
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
   ],
   // http://localhost:3000/sitemap.xml
   sitemap: {
-    exclude: [
-      '/admin'
-    ],
+    exclude: ['/admin'],
   },
 
   googleAnalytics: {
-    id: 'UA-XXX-X'
+    id: 'UA-XXX-X',
   },
 
   styleResources: {
-    scss: ['./assets/scss/*.scss']
+    scss: ['./assets/scss/*.scss'],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -86,5 +82,5 @@ export default {
 
   // https://nuxtjs.org/docs/configuration-glossary/configuration-runtime-config/
   publicRuntimeConfig: {},
-  privateRuntimeConfig: {}
+  privateRuntimeConfig: {},
 }

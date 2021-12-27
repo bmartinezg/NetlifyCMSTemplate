@@ -10,11 +10,11 @@ export default {
   name: 'HomeScreen',
 
   async asyncData({ $content }) {
-    const data = await $content("single_types/home_page").fetch();
+    const data = await $content('single_types/home_page').fetch()
 
     return {
       data,
-    };
+    }
   },
 
   head() {
