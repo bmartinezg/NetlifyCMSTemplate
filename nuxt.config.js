@@ -2,6 +2,7 @@ export default {
   target: 'static',
   
   // Global page headers: https://go.nuxtjs.dev/config-head
+
   head: {
     title: 'CMS Bruno',
     meta: [
@@ -33,6 +34,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    // https://google-analytics.nuxtjs.org/setup
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -46,8 +49,20 @@ export default {
     // https://medium.com/dont-leave-me-out-in-the-code/global-scss-variables-in-nuxt-5fe864873cb5
     '@nuxtjs/style-resources',
     // https://www.npmjs.com/package/nuxt-buefy
-    ['nuxt-buefy', { css: false }]
+    ['nuxt-buefy', { css: false }],
+    // https://sitemap.nuxtjs.org/guide/configuration
+    '@nuxtjs/sitemap'
   ],
+  // http://localhost:3000/sitemap.xml
+  sitemap: {
+    exclude: [
+      '/admin'
+    ],
+  },
+
+  googleAnalytics: {
+    id: 'UA-XXX-X'
+  },
 
   styleResources: {
     scss: ['./assets/scss/*.scss']
@@ -67,5 +82,9 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+
+  // https://nuxtjs.org/docs/configuration-glossary/configuration-runtime-config/
+  publicRuntimeConfig: {},
+  privateRuntimeConfig: {}
 }
