@@ -7,10 +7,20 @@ public_folder: /images
 
 publish_mode: editorial_workflow
 
+# https://www.netlifycms.org/docs/beta-features/
+i18n:
+  structure: multiple_folders
+  locales: [es, en]
+  default_locale: es
+
 collections:
+  # Single types
   - name: "single_types"
     label: "Single types"
     extension: "json"
+    i18n:
+      structure: single_file
+      locales: [es, en]
     files:
       - label: "Header"
         name: "header"
@@ -27,20 +37,23 @@ collections:
       - label: "Terms and Conditions Page"
         name: "terms_and_conditions"
         file: "content/single_types/terms_and_conditions_page.json"
+        i18n: true
         fields:
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Content', name: 'content', widget: 'markdown'}
+          - {label: 'Title', name: 'title', widget: 'string', i18n: true}
+          - {label: 'Content', name: 'content', widget: 'markdown', i18n: true}
   
+  # Collections
   - name: 'page'
     label: 'Pages'
     extension: "json"
     folder: 'content/pages'
     format: 'frontmatter'
     create: true
+    i18n: true
     editor:
       preview: true
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
 
   - name: 'blog'
     label: 'Blog'
@@ -52,7 +65,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true}
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: duplicate}
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true}
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true}

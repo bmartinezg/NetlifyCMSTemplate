@@ -12,7 +12,8 @@ export default {
   name: 'TermsAndConditions',
 
   async asyncData({ $content }) {
-    const {title, content} = await $content("single_types/terms_and_conditions_page").fetch();
+    const {en} = await $content("single_types/terms_and_conditions_page").fetch();
+    const {title, content} = en
 
     return {
       title,
