@@ -13,14 +13,17 @@
           <b-navbar-item href="/">
               Home
           </b-navbar-item>
-          <b-navbar-item href="#">
-              <nuxt-link to="/terms-and-conditions">i18n</nuxt-link>
+          <b-navbar-item>
+            <nuxt-link to="/terms-and-conditions">i18n</nuxt-link>
+          </b-navbar-item>
+          <b-navbar-item>
+            <nuxt-link to="/checkout">form</nuxt-link>
           </b-navbar-item>
           <b-navbar-dropdown label="Info">
-              <b-navbar-item href="#">
+              <b-navbar-item>
                   About
               </b-navbar-item>
-              <b-navbar-item href="#">
+              <b-navbar-item>
                   Contact
               </b-navbar-item>
           </b-navbar-dropdown>
