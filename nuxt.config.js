@@ -53,6 +53,7 @@ export default {
   ],
   // http://localhost:3000/sitemap.xml
   sitemap: {
+    hostname: 'http://localhost:3000',
     exclude: ['/admin'],
   },
 
