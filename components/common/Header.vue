@@ -14,7 +14,7 @@
               Home
           </b-navbar-item>
           <b-navbar-item href="#">
-              <nuxt-link to="/terms-and-conditions">Terminos</nuxt-link>
+              <nuxt-link to="/terms-and-conditions">i18n</nuxt-link>
           </b-navbar-item>
           <b-navbar-dropdown label="Info">
               <b-navbar-item href="#">
