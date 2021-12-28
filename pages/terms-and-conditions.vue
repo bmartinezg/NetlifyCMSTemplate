@@ -13,7 +13,7 @@ export default {
 
   async asyncData({ $content }) {
     const { en } = await $content(
-      'single_types/terms_and_conditions_page'
+      'single_types/terms_and_conditions_page',
     ).fetch()
     const { title, content } = en
 

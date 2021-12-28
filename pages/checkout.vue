@@ -12,8 +12,7 @@
         frameborder="0"
         style="min-width: 100%; height: 539px; border: none"
         scrolling="no"
-      >
-      </iframe>
+      ></iframe>
       <script type="text/javascript">
         var ifr = document.getElementById('JotFormIFrame-213604097984060')
         if (ifr) {
@@ -23,12 +22,12 @@
             iframeParams = iframeParams.concat(
               window.location.href
                 .substr(window.location.href.indexOf('?') + 1)
-                .split('&')
+                .split('&'),
             )
           }
           if (src && src.indexOf('?') > -1) {
             iframeParams = iframeParams.concat(
-              src.substr(src.indexOf('?') + 1).split('&')
+              src.substr(src.indexOf('?') + 1).split('&'),
             )
             src = src.substr(0, src.indexOf('?'))
           }
@@ -42,7 +41,7 @@
           var args = e.data.split(':')
           if (args.length > 2) {
             iframe = document.getElementById(
-              'JotFormIFrame-' + args[args.length - 1]
+              'JotFormIFrame-' + args[args.length - 1],
             )
           } else {
             iframe = document.getElementById('JotFormIFrame')
@@ -105,7 +104,7 @@
             }
             iframe.contentWindow.postMessage(
               JSON.stringify({ type: 'urls', value: urls }),
-              '*'
+              '*',
             )
           }
         }

@@ -2,10 +2,10 @@
   <section class="hero is-halfheight">
     <div class="hero-body" :style="{ backgroundImage: `url(${background})` }">
       <div class="container">
-        <p class="title">
+        <h1 class="title is-1">
           {{ title }}
-        </p>
-        <p class="subtitle hero__subtitle">
+        </h1>
+        <p class="subtitle">
           {{ description }}
         </p>
         <b-button type="is-primary">Primary</b-button>
@@ -36,10 +36,15 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.hero {
-  &__subtitle {
-    width: 60%;
+<style lang="scss" scoped>
+.title {
+  color: $grey-lighter;
+}
+.subtitle {
+  color: $grey-lighter;
+  @include breakpoint(only-phone) {
+    width: 100%;
   }
+  width: 60%;
 }
 </style>

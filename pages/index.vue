@@ -2,6 +2,7 @@
   <div>
     <Hero v-bind="data" />
     <Grid />
+    <Divider />
   </div>
 </template>
 
