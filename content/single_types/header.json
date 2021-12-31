@@ -1,3 +1,8 @@
 {
-  "logo": "static/images/png-negro.png"
+  "es": {
+    "logo": "/images/png-negro.png"
+  },
+  "en": {
+    "logo": "/images/png-negro.png"
+  }
 }
