@@ -3,7 +3,7 @@
     <b-navbar fixed-top shadow wrapper-class="container">
       <template #brand>
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <img :src="headerData.logo | resolvePath" alt="Logo" />
+          <img :src="headerData.es.logo" alt="Logo" />
         </b-navbar-item>
       </template>
       <template #end>
