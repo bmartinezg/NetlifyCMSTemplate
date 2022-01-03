@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero v-bind="data" />
+    <Hero v-bind="data.es" />
     <Grid />
     <Divider />
   </div>
@@ -23,6 +23,14 @@ export default {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
       ],
+      title: this.data.es.title,
+      meta: this.data.es.meta_tags.map(el => {
+        return {
+          name: el.type,
+          content: el.content,
+          hid: `meta-${el.name}`,
+        }
+      })
     }
   },
   template: 'default',
