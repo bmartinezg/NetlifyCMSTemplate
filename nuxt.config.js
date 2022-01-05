@@ -52,16 +52,18 @@ export default {
     // https://sitemap.nuxtjs.org/guide/configuration
     '@nuxtjs/sitemap',
     ['nuxt-stripe-module', {
-      publishableKey: 'pk_live_7JwyOB2wLdPb8hvpxbqvGiqo00jOhFMjXs',
+      publishableKey: process.env.STRIPEPK,
     }],
   ],
   sitemap: {
     // http://localhost:3000/sitemap.xml
+    // TODO
     hostname: 'http://localhost:3000',
     exclude: ['/admin'],
   },
 
   googleAnalytics: {
+    // TODO
     id: 'UA-XXX-X',
   },
 
@@ -86,7 +88,5 @@ export default {
   build: {},
 
   // https://nuxtjs.org/docs/configuration-glossary/configuration-runtime-config/
-  publicRuntimeConfig: {
-    STRIPE_PK: process.env.NUXT_ENV_STRIPE_PK,
-  },
+  publicRuntimeConfig: {},
 }
