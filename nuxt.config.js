@@ -51,6 +51,9 @@ export default {
     ['nuxt-buefy', { css: false }],
     // https://sitemap.nuxtjs.org/guide/configuration
     '@nuxtjs/sitemap',
+    ['nuxt-stripe-module', {
+      publishableKey: 'pk_live_7JwyOB2wLdPb8hvpxbqvGiqo00jOhFMjXs',
+    }],
   ],
   sitemap: {
     // http://localhost:3000/sitemap.xml
