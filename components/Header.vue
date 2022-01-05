@@ -12,7 +12,10 @@
           <nuxt-link to="/terms-and-conditions">MarkDownText-i18n</nuxt-link>
         </b-navbar-item>
         <b-navbar-item>
-          <nuxt-link to="/checkout">form</nuxt-link>
+          <nuxt-link to="/checkout">Checkout</nuxt-link>
+        </b-navbar-item>
+        <b-navbar-item>
+          <nuxt-link to="/form">Form</nuxt-link>
         </b-navbar-item>
         <b-navbar-dropdown label="Info">
           <b-navbar-item>About</b-navbar-item>
