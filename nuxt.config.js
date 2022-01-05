@@ -33,6 +33,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://google-analytics.nuxtjs.org/setup
     '@nuxtjs/google-analytics',
+    // https://levelup.gitconnected.com/what-are-env-files-and-how-to-use-them-in-nuxt-7f194f083e3d
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -81,6 +83,7 @@ export default {
   build: {},
 
   // https://nuxtjs.org/docs/configuration-glossary/configuration-runtime-config/
-  publicRuntimeConfig: {},
-  privateRuntimeConfig: {},
+  publicRuntimeConfig: {
+    STRIPE_PK: process.env.NUXT_ENV_STRIPE_PK,
+  },
 }

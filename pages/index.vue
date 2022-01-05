@@ -20,9 +20,7 @@ export default {
 
   head() {
     return {
-      script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
-      ],
+  
       title: this.data.es.title,
       meta: this.data.es.meta_tags.map(el => {
         return {
