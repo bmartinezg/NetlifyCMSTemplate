@@ -20,15 +20,14 @@ export default {
 
   head() {
     return {
-  
       title: this.data.es.title,
-      meta: this.data.es.meta_tags.map(el => {
+      meta: this.data.es.meta_tags.map((el) => {
         return {
           name: el.type,
           content: el.content,
           hid: `meta-${el.name}`,
         }
-      })
+      }),
     }
   },
   template: 'default',

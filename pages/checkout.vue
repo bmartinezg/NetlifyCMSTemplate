@@ -12,16 +12,18 @@ export default {
   methods: {
     goToPay() {
       this.$stripe.redirectToCheckout({
-        lineItems: [{
-          price: 'price_1KEd6BDZMO3ZpTppLi2Gri2H', // Replace with the ID of your price
-          quantity: 4,
-        }],
+        lineItems: [
+          {
+            price: 'price_1KEd6BDZMO3ZpTppLi2Gri2H', // Replace with the ID of your price
+            quantity: 4,
+          },
+        ],
         mode: 'payment',
         // TODO
         successUrl: 'https://romantic-golick-ba1447.netlify.app/success',
         cancelUrl: 'https://romantic-golick-ba1447.netlify.app/checkout',
       })
-    }
+    },
   },
 }
 </script>

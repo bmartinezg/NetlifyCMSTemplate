@@ -31,12 +31,12 @@ collections:
         name: 'home'
         file: 'content/single_types/home_page.json'
         fields:
-          - label: "MetaTags"
-            name: "meta_tags"
-            widget: "list"
+          - label: 'MetaTags'
+            name: 'meta_tags'
+            widget: 'list'
             fields:
-            - { label: "Type", name: "type", widget: "string" }
-            - { label: "Content", name: "content", widget: "string" }
+              - { label: 'Type', name: 'type', widget: 'string' }
+              - { label: 'Content', name: 'content', widget: 'string' }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Description', name: 'description', widget: 'markdown' }
           - {

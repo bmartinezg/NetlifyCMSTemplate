@@ -15,6 +15,9 @@
           <nuxt-link to="/checkout">Checkout</nuxt-link>
         </b-navbar-item>
         <b-navbar-item>
+          <nuxt-link to="/email">Email</nuxt-link>
+        </b-navbar-item>
+        <b-navbar-item>
           <nuxt-link to="/form">Form</nuxt-link>
         </b-navbar-item>
         <b-navbar-dropdown label="Info">

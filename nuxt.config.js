@@ -34,7 +34,7 @@ export default {
     // https://google-analytics.nuxtjs.org/setup
     '@nuxtjs/google-analytics',
     // https://levelup.gitconnected.com/what-are-env-files-and-how-to-use-them-in-nuxt-7f194f083e3d
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -49,11 +49,16 @@ export default {
     '@nuxtjs/style-resources',
     // https://www.npmjs.com/package/nuxt-buefy
     ['nuxt-buefy', { css: false }],
+    // https://axios.nuxtjs.org/setup
+    '@nuxtjs/axios',
     // https://sitemap.nuxtjs.org/guide/configuration
     '@nuxtjs/sitemap',
-    ['nuxt-stripe-module', {
-      publishableKey: process.env.STRIPEPK,
-    }],
+    [
+      'nuxt-stripe-module',
+      {
+        publishableKey: process.env.STRIPEPK,
+      },
+    ],
   ],
   sitemap: {
     // http://localhost:3000/sitemap.xml
