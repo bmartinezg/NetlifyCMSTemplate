@@ -19,8 +19,8 @@ export default {
           quantity: 1,
         }],
         mode: 'payment',
-        successUrl: 'https://example.com/success',
-        cancelUrl: 'https://example.com/cancel',
+        successUrl: 'https://romantic-golick-ba1447.netlify.app/success',
+        cancelUrl: 'https://romantic-golick-ba1447.netlify.app/cancel',
       }).then((result) => {
         console.log(result)
       })
