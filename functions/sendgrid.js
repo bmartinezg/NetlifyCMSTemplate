@@ -1,5 +1,5 @@
 const client = require('@sendgrid/mail')
-const SENDGRID_API_KEY = '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'
+const SENDGRID_API_KEY = process.env.SENDGRID
 
 exports.handler = async function (event, context, callback) {
   const { message, senderEmail, senderName } = JSON.parse(event.body)
